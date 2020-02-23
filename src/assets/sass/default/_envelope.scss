@@ -1,0 +1,133 @@
+.envelopeLoader {
+    background-image: url("../../img/spinner.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 460px;
+}
+
+.envelopeOffset {
+    img {
+        opacity: 0;
+    }
+}
+
+.envelope {
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    position: relative;
+
+    &--display {
+        opacity: 1;
+    }
+
+    .envelopeAnimation {
+        //background-color: $white;
+        position: relative;
+    }
+
+    .envelopeCover {
+        transition: top 0.3s ease-in;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+    }
+
+    .envelopeBody {
+        transition: top 0.3s ease-in;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .envelopeBodyBottom {
+        background-color: $white;
+        transition: top 0.3s ease-in;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .envelopeContent {
+        position: relative;
+        z-index: 1;
+
+        > div {
+            position: absolute;
+            top: 0;
+            transition: 0.3s ease-in;
+        }
+    }
+
+    &--open {
+        .envelopeCover {
+            animation: flipOpen 0.4s ease-in forwards;
+        }
+    }
+
+    &--close {
+        .envelopeCover {
+            animation: flipClose 0.4s ease-in forwards;
+        }
+    }
+
+    .note {
+        opacity: 1;
+        top: 50%;
+        transition: all 0.3s ease-in;
+        > div {
+            background-color: $white;
+            background-image: url("../../img/bookmark.jpg");
+            background-size: cover;
+            box-shadow: 0 0 10px 0 rgba($dark, 0.15);
+            margin: 0 auto;
+            transform: rotate(0deg);
+        }
+    }
+    &--showContent {
+        .envelopeCover,
+        .envelopeBody,
+        .envelopeBodyBottom {
+            top: 40%;
+        }
+        .envelopeContent {
+            > div {
+                top: -50%;
+            }
+        }
+
+        .note {
+            transform: rotate(10deg);
+        }
+    }
+
+    &--shownContent {
+        .envelopeCover {
+            z-index: 0;
+        }
+    }
+
+    @keyframes flipOpen {
+        0% {
+            transform: rotateX(0deg);
+            transform-origin: center top;
+        }
+        100% {
+            transform: rotateX(180deg);
+            transform-origin: center top;
+        }
+    }
+    @keyframes flipClose {
+        0% {
+            transform: rotateX(180deg);
+            transform-origin: center top;
+        }
+        100% {
+            transform: rotateX(0deg);
+            transform-origin: center top;
+        }
+    }
+}

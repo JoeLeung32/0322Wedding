@@ -1,0 +1,36 @@
+body,
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    top: 0;
+    &.index {
+        background-color: $mistyrose;
+        overflow: hidden;
+    }
+    &.invitation {
+        background-color: $mistyrose;
+        overflow: hidden;
+    }
+    &.ourDate {
+        background-color: $khaki;
+    }
+    &.learn {
+        background-color: $milkWhite;
+    }
+    &.details {
+        background-color: $milkWhiteDark;
+        > div {
+            background-color: $white;
+            min-height: 100vh;
+        }
+    }
+}
+
+.O322 {
+    .card+.card {
+        margin-top: 1em;
+    }
+}

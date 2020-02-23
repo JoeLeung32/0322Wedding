@@ -1,0 +1,75 @@
+{
+  "name": "wedding",
+  "version": "0.1.0",
+  "description": "Emily & Joe Wedding",
+  "main": "index.js",
+  "author": "Joe Leung <joe@chunkit.hk>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "start:dev": "dotenv -e .env.dev yarn run start",
+    "build": "react-scripts build",
+    "build:dev:joe": "dotenv -e .env.dev.joe yarn run build",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "reinstall": "yarn install --force",
+    "reset-modules": "rm -rf node_modules/",
+    "reset-modules:dount": "rm -rf node_modules/@",
+    "reset-rn": "rm -fr $TMPDIR/react-*;",
+    "reset-all": "yarn reset-modules && yarn reset-rn && yarn cache clean",
+    "update-dependencies": "yarn upgrade-interactive --latest"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not dead",
+      "ie 11",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@sweetalert2/theme-bootstrap-4": "3.1.0",
+    "axios": "0.19.2",
+    "axios-oauth-client": "1.2.1",
+    "axios-token-interceptor": "0.2.0",
+    "bootstrap": "4.4.1",
+    "crypto-js": "4.0.0",
+    "moment": "2.24.0",
+    "node-sass": "4.13.1",
+    "perfect-scrollbar": "1.5.0",
+    "qs": "6.9.1",
+    "react": "16.12.0",
+    "react-app-polyfill": "1.0.6",
+    "react-bootstrap": "1.0.0-beta.16",
+    "react-dom": "16.12.0",
+    "react-hook-form": "4.9.8",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.4.0",
+    "react-visibility-sensor": "5.1.1",
+    "request": "2.88.2",
+    "sweetalert2": "9.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/runtime": "7.8.4",
+    "babel-eslint": "10.0.3",
+    "dotenv-cli": "3.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.18.3",
+    "prettier": "1.19.1"
+  }
+}
