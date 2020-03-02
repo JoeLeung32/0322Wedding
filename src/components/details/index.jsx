@@ -12,11 +12,20 @@ const Details = props => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col px-0">
-                        <div className="bg-warning">
+                        <div className="bg-info">
                             <div className="p-2 text-center">
                                 <strong>
                                     我們並沒有中國內地的親戚朋友出席或參與
                                 </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row justify-content-center">
+                    <div className="col px-0">
+                        <div className="bg-warning">
+                            <div className="p-2 text-center">
+                                若有發燒跡象(99.5-100.4華氏(°F)或以上或37.5-38攝氏(°C)或以上)或出現其他病徵，請盡早求診。
                             </div>
                         </div>
                     </div>

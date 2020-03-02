@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import ImageRetina from 'components/imageRetina';
 
 import {
+    Update0302,
     COVID19Card,
     ShuttleBusCard,
     ContactCard,
@@ -14,6 +15,7 @@ const OurDate = props => {
             <div className="container O322">
                 <div className="row">
                     <div className="col">
+                        <Update0302 />
                         <ShuttleBusCard />
                         <COVID19Card />
                         <ContactCard />

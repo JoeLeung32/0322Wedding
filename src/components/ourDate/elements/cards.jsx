@@ -101,6 +101,35 @@ export const ShuttleBusCard = () => {
     );
 };
 
+export const Update0302 = () => {
+    return (
+        <div className="card">
+            <div  className="bg-warning p-2">
+                若有發燒跡象(99.5-100.4華氏(°F)或以上或37.5-38攝氏(°C)或以上)或出現其他病徵，請盡早求診。
+            </div>
+            <div className="card-body">
+                <h5 className="card-title">過去一星期的更新</h5>
+                <h6 className="card-subtitle mb-2 text-muted">
+                    2020 年 03 月 02 日
+                </h6>
+                <p className="card-text">
+                    以下更新來自婚禮及婚宴場地：
+                </p>
+                <strong>二月廿六日更新</strong>
+                <ul>
+                    <li>提供抗菌消毒洗手液或酒精啫喱；</li>
+                </ul>
+                <strong>二月廿七日更新</strong>
+                <ul>
+                    <li>交場前一晚婚禮草地及宴會場地會清潔乾淨；</li>
+                    <li>會有一位職員配備紅外線探熱器檢查賓客體溫；</li>
+                    <li>消毒洗手液或酒精置於草地入口附近及餐廳中間；</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
+
 export const ContactCard = () => {
     return (
         <div className="card">

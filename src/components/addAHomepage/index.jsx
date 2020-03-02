@@ -6,7 +6,7 @@ const AddAHomepage = props => {
     const ContactCard = () => {
         return (
             <div className="card">
-                <div className={"video-container"}>
+                <div className="video-container">
                     <iframe
                         src="https://www.youtube.com/embed/nvu7d_llzuw?controls=0"
                         frameBorder="0"
